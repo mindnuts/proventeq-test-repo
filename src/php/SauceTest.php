@@ -28,7 +28,7 @@ class SauceTest extends Sauce\Sausage\WebDriverTestCase
         return $this->elements($this->using('tag name')->value($tag));
     }
 
-    protected function populate()
+    public function populate()
     {
         $elems = $this->elemsByTag('textField');
         foreach ($elems as $elem) {
